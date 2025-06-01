@@ -1,0 +1,12 @@
+[
+  { "name": "Glacial Fortress", "image": "", "scryfall": "", "colors": ["W", "U"] },
+  { "name": "Drowned Catacomb", "image": "", "scryfall": "", "colors": ["U", "B"] },
+  { "name": "Dragonskull Summit", "image": "", "scryfall": "", "colors": ["B", "R"] },
+  { "name": "Rootbound Crag", "image": "", "scryfall": "", "colors": ["R", "G"] },
+  { "name": "Sunpetal Grove", "image": "", "scryfall": "", "colors": ["G", "W"] },
+  { "name": "Isolated Chapel", "image": "", "scryfall": "", "colors": ["W", "B"] },
+  { "name": "Sulfur Falls", "image": "", "scryfall": "", "colors": ["U", "R"] },
+  { "name": "Woodland Cemetery", "image": "", "scryfall": "", "colors": ["B", "G"] },
+  { "name": "Clifftop Retreat", "image": "", "scryfall": "", "colors": ["R", "W"] },
+  { "name": "Hinterland Harbor", "image": "", "scryfall": "", "colors": ["G", "U"] }
+]

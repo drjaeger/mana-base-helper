@@ -1,0 +1,12 @@
+[
+  { "name": "Flooded Grove", "image": "", "scryfall": "", "colors": ["G", "U"] },
+  { "name": "Sunken Ruins", "image": "", "scryfall": "", "colors": ["U", "B"] },
+  { "name": "Graven Cairns", "image": "", "scryfall": "", "colors": ["B", "R"] },
+  { "name": "Fire-Lit Thicket", "image": "", "scryfall": "", "colors": ["R", "G"] },
+  { "name": "Wooded Bastion", "image": "", "scryfall": "", "colors": ["G", "W"] },
+  { "name": "Fetid Heath", "image": "", "scryfall": "", "colors": ["W", "B"] },
+  { "name": "Cascade Bluffs", "image": "", "scryfall": "", "colors": ["U", "R"] },
+  { "name": "Twilight Mire", "image": "", "scryfall": "", "colors": ["B", "G"] },
+  { "name": "Rugged Prairie", "image": "", "scryfall": "", "colors": ["R", "W"] },
+  { "name": "Mystic Gate", "image": "", "scryfall": "", "colors": ["W", "U"] }
+]

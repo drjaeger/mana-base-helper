@@ -1,0 +1,12 @@
+[
+  { "name": "Azorius Chancery", "image": "", "scryfall": "", "colors": ["W", "U"] },
+  { "name": "Dimir Aqueduct", "image": "", "scryfall": "", "colors": ["U", "B"] },
+  { "name": "Rakdos Carnarium", "image": "", "scryfall": "", "colors": ["B", "R"] },
+  { "name": "Gruul Turf", "image": "", "scryfall": "", "colors": ["R", "G"] },
+  { "name": "Selesnya Sanctuary", "image": "", "scryfall": "", "colors": ["G", "W"] },
+  { "name": "Orzhov Basilica", "image": "", "scryfall": "", "colors": ["W", "B"] },
+  { "name": "Izzet Boilerworks", "image": "", "scryfall": "", "colors": ["U", "R"] },
+  { "name": "Golgari Rot Farm", "image": "", "scryfall": "", "colors": ["B", "G"] },
+  { "name": "Boros Garrison", "image": "", "scryfall": "", "colors": ["R", "W"] },
+  { "name": "Simic Growth Chamber", "image": "", "scryfall": "", "colors": ["G", "U"] }
+]

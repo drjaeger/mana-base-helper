@@ -1,0 +1,12 @@
+[
+  { "name": "Tundra", "image": "", "scryfall": "", "colors": ["W", "U"] },
+  { "name": "Underground Sea", "image": "", "scryfall": "", "colors": ["U", "B"] },
+  { "name": "Badlands", "image": "", "scryfall": "", "colors": ["B", "R"] },
+  { "name": "Taiga", "image": "", "scryfall": "", "colors": ["R", "G"] },
+  { "name": "Savannah", "image": "", "scryfall": "", "colors": ["G", "W"] },
+  { "name": "Scrubland", "image": "", "scryfall": "", "colors": ["W", "B"] },
+  { "name": "Volcanic Island", "image": "", "scryfall": "", "colors": ["U", "R"] },
+  { "name": "Bayou", "image": "", "scryfall": "", "colors": ["B", "G"] },
+  { "name": "Plateau", "image": "", "scryfall": "", "colors": ["R", "W"] },
+  { "name": "Tropical Island", "image": "", "scryfall": "", "colors": ["G", "U"] }
+]

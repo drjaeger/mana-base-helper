@@ -1,0 +1,12 @@
+[
+  { "name": "Adarkar Wastes", "image": "", "scryfall": "", "colors": ["W", "U"] },
+  { "name": "Underground River", "image": "", "scryfall": "", "colors": ["U", "B"] },
+  { "name": "Sulfurous Springs", "image": "", "scryfall": "", "colors": ["B", "R"] },
+  { "name": "Karplusan Forest", "image": "", "scryfall": "", "colors": ["R", "G"] },
+  { "name": "Brushland", "image": "", "scryfall": "", "colors": ["G", "W"] },
+  { "name": "Caves of Koilos", "image": "", "scryfall": "", "colors": ["W", "B"] },
+  { "name": "Shivan Reef", "image": "", "scryfall": "", "colors": ["U", "R"] },
+  { "name": "Llanowar Wastes", "image": "", "scryfall": "", "colors": ["B", "G"] },
+  { "name": "Battlefield Forge", "image": "", "scryfall": "", "colors": ["R", "W"] },
+  { "name": "Yavimaya Coast", "image": "", "scryfall": "", "colors": ["G", "U"] }
+]

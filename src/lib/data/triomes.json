@@ -1,0 +1,12 @@
+[
+  { "name": "Indatha Triome", "image": "", "scryfall": "", "colors": ["W", "B", "G"] },
+  { "name": "Ketria Triome", "image": "", "scryfall": "", "colors": ["G", "U", "R"] },
+  { "name": "Raugrin Triome", "image": "", "scryfall": "", "colors": ["U", "R", "W"] },
+  { "name": "Savai Triome", "image": "", "scryfall": "", "colors": ["R", "W", "B"] },
+  { "name": "Zagoth Triome", "image": "", "scryfall": "", "colors": ["B", "G", "U"] },
+  { "name": "Spara's Headquarters", "image": "", "scryfall": "", "colors": ["G", "W", "U"] },
+  { "name": "Xander's Lounge", "image": "", "scryfall": "", "colors": ["U", "B", "R"] },
+  { "name": "Ziatora's Proving Ground", "image": "", "scryfall": "", "colors": ["B", "R", "G"] },
+  { "name": "Jetmir's Garden", "image": "", "scryfall": "", "colors": ["R", "G", "W"] },
+  { "name": "Raffine's Tower", "image": "", "scryfall": "", "colors": ["W", "U", "B"] }
+]

@@ -1,0 +1,12 @@
+[
+  { "name": "Barkchannel Pathway // Tidechannel Pathway", "image": "", "scryfall": "", "colors": ["G", "U"] },
+  { "name": "Blightstep Pathway // Searstep Pathway", "image": "", "scryfall": "", "colors": ["B", "R"] },
+  { "name": "Branchloft Pathway // Boulderloft Pathway", "image": "", "scryfall": "", "colors": ["G", "W"] },
+  { "name": "Brightclimb Pathway // Grimclimb Pathway", "image": "", "scryfall": "", "colors": ["W", "B"] },
+  { "name": "Clearwater Pathway // Murkwater Pathway", "image": "", "scryfall": "", "colors": ["U", "B"] },
+  { "name": "Cragcrown Pathway // Timbercrown Pathway", "image": "", "scryfall": "", "colors": ["R", "G"] },
+  { "name": "Hengegate Pathway // Mistgate Pathway", "image": "", "scryfall": "", "colors": ["W", "U"] },
+  { "name": "Needleverge Pathway // Pillarverge Pathway", "image": "", "scryfall": "", "colors": ["R", "W"] },
+  { "name": "Riverglide Pathway // Lavaglide Pathway", "image": "", "scryfall": "", "colors": ["U", "R"] },
+  { "name": "Darkbore Pathway // Slitherbore Pathway", "image": "", "scryfall": "", "colors": ["B", "G"] }
+]

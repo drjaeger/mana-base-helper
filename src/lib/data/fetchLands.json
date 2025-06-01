@@ -1,0 +1,62 @@
+[
+    {
+      "name": "Arid Mesa",
+      "image": "",
+      "scryfall": "",
+      "colors": ["R", "W"]
+    },
+    {
+      "name": "Marsh Flats",
+      "image": "",
+      "scryfall": "",
+      "colors": ["W", "B"]
+    },
+    {
+      "name": "Misty Rainforest",
+      "image": "",
+      "scryfall": "",
+      "colors": ["G", "U"]
+    },
+    {
+      "name": "Polluted Delta",
+      "image": "",
+      "scryfall": "",
+      "colors": ["U", "B"]
+    },
+    {
+      "name": "Scalding Tarn",
+      "image": "",
+      "scryfall": "",
+      "colors": ["U", "R"]
+    },
+    {
+      "name": "Verdant Catacombs",
+      "image": "",
+      "scryfall": "",
+      "colors": ["B", "G"]
+    },
+    {
+      "name": "Windswept Heath",
+      "image": "",
+      "scryfall": "",
+      "colors": ["G", "W"]
+    },
+    {
+      "name": "Wooded Foothills",
+      "image": "",
+      "scryfall": "",
+      "colors": ["R", "G"]
+    },
+    {
+      "name": "Bloodstained Mire",
+      "image": "",
+      "scryfall": "",
+      "colors": ["B", "R"]
+    },
+    {
+      "name": "Flooded Strand",
+      "image": "",
+      "scryfall": "",
+      "colors": ["W", "U"]
+    }
+  ]

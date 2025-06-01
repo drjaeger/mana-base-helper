@@ -1,0 +1,12 @@
+[
+  { "name": "Hallowed Fountain", "image": "", "scryfall": "", "colors": ["W", "U"] },
+  { "name": "Watery Grave", "image": "", "scryfall": "", "colors": ["U", "B"] },
+  { "name": "Blood Crypt", "image": "", "scryfall": "", "colors": ["B", "R"] },
+  { "name": "Stomping Ground", "image": "", "scryfall": "", "colors": ["R", "G"] },
+  { "name": "Temple Garden", "image": "", "scryfall": "", "colors": ["G", "W"] },
+  { "name": "Godless Shrine", "image": "", "scryfall": "", "colors": ["W", "B"] },
+  { "name": "Steam Vents", "image": "", "scryfall": "", "colors": ["U", "R"] },
+  { "name": "Overgrown Tomb", "image": "", "scryfall": "", "colors": ["B", "G"] },
+  { "name": "Sacred Foundry", "image": "", "scryfall": "", "colors": ["R", "W"] },
+  { "name": "Breeding Pool", "image": "", "scryfall": "", "colors": ["G", "U"] }
+]

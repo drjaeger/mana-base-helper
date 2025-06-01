@@ -1,0 +1,12 @@
+[
+  { "name": "Deserted Beach", "image": "", "scryfall": "", "colors": ["W", "U"] },
+  { "name": "Shipwreck Marsh", "image": "", "scryfall": "", "colors": ["U", "B"] },
+  { "name": "Haunted Ridge", "image": "", "scryfall": "", "colors": ["B", "R"] },
+  { "name": "Rockfall Vale", "image": "", "scryfall": "", "colors": ["R", "G"] },
+  { "name": "Overgrown Farmland", "image": "", "scryfall": "", "colors": ["G", "W"] },
+  { "name": "Shattered Sanctum", "image": "", "scryfall": "", "colors": ["W", "B"] },
+  { "name": "Stormcarved Coast", "image": "", "scryfall": "", "colors": ["U", "R"] },
+  { "name": "Deathcap Glade", "image": "", "scryfall": "", "colors": ["B", "G"] },
+  { "name": "Sundown Pass", "image": "", "scryfall": "", "colors": ["R", "W"] },
+  { "name": "Dreamroot Cascade", "image": "", "scryfall": "", "colors": ["G", "U"] }
+]

@@ -1,0 +1,31 @@
+[
+  { "name": "Sol Ring", "image": "", "scryfall": "", "category": "Staple", "tier": 1 },
+  { "name": "Arcane Signet", "image": "", "scryfall": "", "category": "Staple", "tier": 2 },
+
+  { "name": "Talisman of Dominance", "colors": ["U", "B"], "category": "Talisman", "tier": 3 },
+  { "name": "Talisman of Progress", "colors": ["W", "U"], "category": "Talisman", "tier": 3 },
+  { "name": "Talisman of Impulse", "colors": ["R", "G"], "category": "Talisman", "tier": 3 },
+  { "name": "Talisman of Indulgence", "colors": ["B", "R"], "category": "Talisman", "tier": 3 },
+  { "name": "Talisman of Unity", "colors": ["G", "W"], "category": "Talisman", "tier": 3 },
+  { "name": "Talisman of Creativity", "colors": ["U", "R"], "category": "Talisman", "tier": 3 },
+  { "name": "Talisman of Resilience", "colors": ["B", "G"], "category": "Talisman", "tier": 3 },
+  { "name": "Talisman of Conviction", "colors": ["R", "W"], "category": "Talisman", "tier": 3 },
+  { "name": "Talisman of Curiosity", "colors": ["G", "U"], "category": "Talisman", "tier": 3 },
+  { "name": "Talisman of Hierarchy", "colors": ["W", "B"], "category": "Talisman", "tier": 3 },
+
+  { "name": "Azorius Signet", "colors": ["W", "U"], "category": "Signet", "tier": 4 },
+  { "name": "Dimir Signet", "colors": ["U", "B"], "category": "Signet", "tier": 4 },
+  { "name": "Rakdos Signet", "colors": ["B", "R"], "category": "Signet", "tier": 4 },
+  { "name": "Gruul Signet", "colors": ["R", "G"], "category": "Signet", "tier": 4 },
+  { "name": "Selesnya Signet", "colors": ["G", "W"], "category": "Signet", "tier": 4 },
+  { "name": "Orzhov Signet", "colors": ["W", "B"], "category": "Signet", "tier": 4 },
+  { "name": "Izzet Signet", "colors": ["U", "R"], "category": "Signet", "tier": 4 },
+  { "name": "Golgari Signet", "colors": ["B", "G"], "category": "Signet", "tier": 4 },
+  { "name": "Boros Signet", "colors": ["R", "W"], "category": "Signet", "tier": 4 },
+  { "name": "Simic Signet", "colors": ["G", "U"], "category": "Signet", "tier": 4 },
+
+  { "name": "Fellwar Stone", "image": "", "scryfall": "", "category": "Staple", "tier": 5 },
+  { "name": "Chromatic Lantern", "image": "", "scryfall": "", "category": "Fixing", "tier": 5 },
+  { "name": "Mind Stone", "category": "Ramp", "tier": 5 },
+  { "name": "Thought Vessel", "category": "Ramp", "tier": 5 }
+]

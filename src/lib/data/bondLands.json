@@ -1,0 +1,62 @@
+[
+    {
+      "name": "Bountiful Promenade",
+      "image": "",
+      "scryfall": "",
+      "colors": ["G", "W"]
+    },
+    {
+      "name": "Luxury Suite",
+      "image": "",
+      "scryfall": "",
+      "colors": ["B", "R"]
+    },
+    {
+      "name": "Morphic Pool",
+      "image": "",
+      "scryfall": "",
+      "colors": ["U", "B"]
+    },
+    {
+      "name": "Sea of Clouds",
+      "image": "",
+      "scryfall": "",
+      "colors": ["W", "U"]
+    },
+    {
+      "name": "Spire Garden",
+      "image": "",
+      "scryfall": "",
+      "colors": ["R", "G"]
+    },
+    {
+      "name": "Training Center",
+      "image": "",
+      "scryfall": "",
+      "colors": ["U", "R"]
+    },
+    {
+      "name": "Vault of Champions",
+      "image": "",
+      "scryfall": "",
+      "colors": ["W", "B"]
+    },
+    {
+      "name": "Undergrowth Stadium",
+      "image": "",
+      "scryfall": "",
+      "colors": ["B", "G"]
+    },
+    {
+      "name": "Spectator Seating",
+      "image": "",
+      "scryfall": "",
+      "colors": ["R", "W"]
+    },
+    {
+      "name": "Rejuvenating Spring",
+      "image": "",
+      "scryfall": "",
+      "colors": ["G", "U"]
+    }
+]
