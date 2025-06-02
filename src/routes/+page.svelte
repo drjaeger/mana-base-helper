@@ -1,4 +1,7 @@
 <script lang="ts">
+  import "../app.css";
+  import { base } from "$app/paths";
+
   import {
     getManaBase,
     type ColorOption,
@@ -9,9 +12,9 @@
   import manaRocks from "$lib/data/manaRocks.json";
 
   let colors: Record<ColorOption, boolean> = {
-    W: true,
-    U: true,
-    B: true,
+    W: false,
+    U: false,
+    B: false,
     R: false,
     G: false,
   };
@@ -183,17 +186,6 @@
       bondLand: "Bond Land",
     };
     return map[type] || type.replace(/([A-Z])/g, " $1").trim();
-  }
-
-  function getManaColor(color: string): string {
-    const colorsMap: Record<string, string> = {
-      W: "#fffae6", // a warm light for white
-      U: "#93c5fd", // blue
-      B: "#9ca3af", // using a neutral gray for black
-      R: "#fca5a5", // red
-      G: "#6ee7b7", // green
-    };
-    return colorsMap[color] || "#aaa";
   }
 </script>
 
