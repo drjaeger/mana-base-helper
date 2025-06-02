@@ -277,7 +277,7 @@
                     <div class="flex gap-1">
                       {#each Object.keys(colors).filter((c) => colors[c as ColorOption]) as color}
                         <img
-                          src={`/icons/${color.toLowerCase()}.svg`}
+                          src={`${base}/icons/${color.toLowerCase()}.svg`}
                           alt="{color} mana"
                           title={color}
                           class="w-3 h-3"
