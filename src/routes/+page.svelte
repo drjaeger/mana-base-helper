@@ -11,13 +11,14 @@
   import utilityLands from "$lib/data/utilityLands.json";
   import manaRocks from "$lib/data/manaRocks.json";
 
-  let colors: Record<ColorOption, boolean> = {
+  let selColor: Record<ColorOption, boolean> = {
     W: false,
     U: false,
     B: false,
     R: false,
     G: false,
   };
+  let chColor: Record<ColorOption, boolean>;
 
   let manaBaseResults: ManaBaseEntry[] = [];
   let selectedUtilityLands: Record<string, boolean> = {};
@@ -43,7 +44,8 @@
   ];
 
   function generateManaBase() {
-    const selectedColors = Object.entries(colors)
+    chColor = { ...selColor };
+    const selectedColors = Object.entries(chColor)
       .filter(([_, val]) => val)
       .map(([key]) => key as ColorOption);
 
@@ -73,13 +75,6 @@
     cardIdx: number,
     landIdx: number
   ): { option: { name: string }; oidx: number }[] {
-    if (
-      !selectableLandTypes.includes(card.type) ||
-      !card.options ||
-      typeof card.count !== "number"
-    ) {
-      return [];
-    }
     const selectedIndices: number[] = [];
     for (let i = 0; i < card.count; i++) {
       if (i !== landIdx) {
@@ -95,11 +90,7 @@
     .map((entry, entryIdx) =>
       entry.cards
         .map((card, cardIdx) => {
-          if (
-            selectableLandTypes.includes(card.type) &&
-            card.options &&
-            typeof card.count === "number"
-          ) {
+          if (selectableLandTypes.includes(card.type)) {
             return Array(card.count)
               .fill(0)
               .map((_, landIdx) => {
@@ -152,10 +143,6 @@
     setTimeout(() => (copied = false), 1200);
   }
 
-  function formatLandType(type: string) {
-    return type.replace(/([A-Z])/g, " $1").replace("O G", "OG ");
-  }
-
   function manaRockMatchesDeck(
     manaRock: { colors?: string[] },
     deckColors: string[]
@@ -187,6 +174,13 @@
     };
     return map[type] || type.replace(/([A-Z])/g, " $1").trim();
   }
+
+  function truncateString(str: string, x: number) {
+    if (str.length <= x) {
+      return str;
+    }
+    return str.substring(0, x) + "...";
+  }
 </script>
 
 <div class="min-h-screen bg-zinc-900 text-gray-100">
@@ -198,19 +192,26 @@
     <div class="space-y-4">
       <p class="text-lg font-medium text-gray-300">Choose your colors:</p>
       <div class="grid grid-cols-5 gap-4">
-        {#each Object.keys(colors) as color}
+        {#each Object.keys(selColor) as color}
           <label
             class="inline-flex items-center space-x-2 rounded transition"
-            class:bg-yellow-900={colors[color as ColorOption]}
+            class:bg-yellow-900={selColor[color as ColorOption]}
             style="padding: 0.25rem 0.5rem;"
           >
             <input
               type="checkbox"
-              bind:checked={colors[color as ColorOption]}
+              bind:checked={selColor[color as ColorOption]}
               class="h-5 w-5 text-emerald-500 bg-zinc-800 border-zinc-600 rounded focus:ring-0 transition"
               aria-label={`Select color ${color}`}
             />
-            <span class="font-semibold text-gray-200">{color}</span>
+            <span class="font-semibold text-gray-200">
+              <img
+                src={`${base}/icons/${color.toLowerCase()}.svg`}
+                alt="{color} mana"
+                title={color}
+                class="w-6 h-6"
+              />
+            </span>
           </label>
         {/each}
       </div>
@@ -221,7 +222,7 @@
       class="bg-emerald-600 text-white font-semibold py-2 px-6 rounded-lg hover:bg-emerald-500 transition flex items-center gap-2 shadow-md"
       aria-label="Generate Mana Base"
     >
-      ⚔️ Generate Mana Base
+      Generate Mana Base
     </button>
 
     {#if manaBaseResults.length > 0}
@@ -275,7 +276,7 @@
                       Basic Land
                     </span>
                     <div class="flex gap-1">
-                      {#each Object.keys(colors).filter((c) => colors[c as ColorOption]) as color}
+                      {#each Object.keys(chColor).filter((c) => chColor[c as ColorOption]) as color}
                         <img
                           src={`${base}/icons/${color.toLowerCase()}.svg`}
                           alt="{color} mana"
@@ -296,6 +297,7 @@
                       {#each utilityLands as land}
                         <label
                           class="flex items-center gap-2 px-2 py-1 rounded hover:bg-zinc-800 transition"
+                          title={land.name}
                         >
                           <input
                             type="checkbox"
@@ -303,7 +305,7 @@
                             class="h-4 w-4 rounded border-2 border-emerald-500 bg-zinc-900 checked:bg-emerald-500 checked:border-emerald-400 focus:ring-emerald-600 transition"
                             aria-label={`Select utility land ${land.name}`}
                           />
-                          <span>{land.name}</span>
+                          <span>{truncateString(land.name, 16)}</span>
                           <span class="text-xs text-gray-400"
                             >({land.category})</span
                           >
@@ -319,7 +321,7 @@
                     <div
                       class="grid grid-cols-2 gap-2 max-h-48 overflow-y-auto mt-2 custom-scroll"
                     >
-                      {#each manaRocks.filter( (rock) => manaRockMatchesDeck( rock, Object.keys(colors).filter((c) => colors[c as ColorOption]) ) ) as rock}
+                      {#each manaRocks.filter( (rock) => manaRockMatchesDeck( rock, Object.keys(chColor).filter((c) => chColor[c as ColorOption]) ) ) as rock}
                         <label
                           class="flex items-center gap-2 px-2 py-1 rounded hover:bg-zinc-800 transition"
                         >
@@ -329,10 +331,10 @@
                             class="h-4 w-4 rounded border-2 border-emerald-500 bg-zinc-900 checked:bg-emerald-500 checked:border-emerald-400 focus:ring-emerald-600 transition"
                             aria-label={`Select mana rock ${rock.name}`}
                           />
-                          <span>{rock.name}</span>
+                          <span>{truncateString(rock.name, 21)}</span>
                           {#if rock.tier}
                             <span class="text-xs text-gray-400"
-                              >(Tier {rock.tier})</span
+                              >(T{rock.tier})</span
                             >
                           {/if}
                         </label>
@@ -349,7 +351,6 @@
             <hr class="my-4 border-zinc-700 opacity-40" />
           </div>
         {/each}
-        <hr class="my-6 border-yellow-700 opacity-50" />
         <div class="mt-8">
           <h3 class="font-bold mb-2">Copyable Output</h3>
           <textarea

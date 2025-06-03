@@ -28,6 +28,14 @@ export type ManaBaseEntry = {
   cards: ManaBaseCardEntry[];
 };
 
+/**
+  TODO:
+  - Add ability to skip OG Duals
+  - Utility lands fugly + add search
+  - Mana rocks fugly + add search
+  - Handle tango lands better / add alternative if tango land missing ?
+*/
+
 function filterLandsByColors<T extends { colors: string[]; name: string }>(
   lands: T[],
   colors: ColorOption[],
@@ -42,6 +50,20 @@ function filterLandsByColors<T extends { colors: string[]; name: string }>(
     .map((land) => ({ name: land.name }));
 }
 
+function getBasic(colors: ColorOption[], count: number): { name: string }[] {
+  const basicLandNames = {
+    W: "Plains",
+    U: "Island",
+    B: "Swamp",
+    R: "Mountain",
+    G: "Forest",
+  };
+  const basicLands = colors.map((color) => ({
+    name: basicLandNames[color],
+  }));
+  return basicLands;
+}
+
 export function getManaBase(colors: ColorOption[]): ManaBaseEntry[] {
   const numColors = colors.length;
 
@@ -51,7 +73,7 @@ export function getManaBase(colors: ColorOption[]): ManaBaseEntry[] {
         category: "Error",
         cards: [
           {
-            type: "warning",
+            type: "Please select at least one color.",
             count: 1,
             options: [{ name: "Please select at least one color." }],
           },
@@ -86,8 +108,8 @@ export function getManaBase(colors: ColorOption[]): ManaBaseEntry[] {
         cards: [
           {
             type: "basic",
-            count: 28,
-            options: [{ name: "basic" }],
+            count: 29,
+            options: getBasic(colors, 29),
           },
         ],
       },
@@ -121,8 +143,8 @@ export function getManaBase(colors: ColorOption[]): ManaBaseEntry[] {
         cards: [
           {
             type: "basic",
-            count: 10,
-            options: [{ name: "basic" }],
+            count: 12,
+            options: getBasic(colors, 12),
           },
         ],
       },
@@ -221,8 +243,8 @@ export function getManaBase(colors: ColorOption[]): ManaBaseEntry[] {
         cards: [
           {
             type: "basic",
-            count: 7,
-            options: [{ name: "basic" }],
+            count: 9,
+            options: getBasic(colors, 8),
           },
         ],
       },
